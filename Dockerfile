@@ -2,7 +2,7 @@ FROM python:alpine3.9
 
 LABEL maintainer="Afolabi Omotoso <afolabi88@gmail.com>"
 
-ENV PGADMIN_VERSION 5.0
+ENV PGADMIN_VERSION 5.6
 ENV UID             1000
 ENV GID             50
 
