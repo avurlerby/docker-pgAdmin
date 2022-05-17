@@ -1,6 +1,6 @@
 FROM python:alpine3.9
 
-LABEL maintainer="Kacper Czarczyński <afolabi88@gmail.com>"
+LABEL maintainer="Afolabi Omotoso <afolabi88@gmail.com>"
 
 ENV PGADMIN_VERSION 5.0
 ENV UID             1000
@@ -23,7 +23,7 @@ LABEL   org.label-schema.name="pgAdmin4" \
         org.label-schema.url="https://www.pgadmin.org" \
         org.label-schema.license="PostgreSQL" \
         org.label-schema.version=${PGADMIN_VERSION} \
-        org.label-schema.vcs-url="https://github.com/Chorss/docker-pgAdmin4"
+        org.label-schema.vcs-url="https://github.com/avurlerby/docker-pgAdmin/"
 
 RUN apk add --no-cache --virtual .run-deps postgresql postgresql-libs libffi-dev openssl shadow sudo su-exec bash linux-headers
 RUN apk add --no-cache --virtual .build-deps make gcc musl-dev openssl postgresql-dev \
