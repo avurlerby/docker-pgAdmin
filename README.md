@@ -40,6 +40,6 @@ Example commands
 
 On most shells, you can run with the UID/GID of the current user like this
 
-    docker run -d -p 5050:5050 -e UID=`id -u` -e GID=`id -g` -v $HOME/mydata:/data chorss/docker-pgadmin4
+    docker run -d -p 5050:5050 -e UID=`id -u` -e GID=`id -g` -v $HOME/mydata:/data avurlerby/docker-pgadmin4
 
  **Remember to create `$HOME/mydata` before running the command above.**
