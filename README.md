@@ -1,4 +1,4 @@
-**pgAdmin4 in docker container - Version 4.11**
+**pgAdmin4 in docker container - Version 5.6**
 -
 
 [![](https://images.microbadger.com/badges/image/chorss/docker-pgadmin4.svg)](https://microbadger.com/images/chorss/docker-pgadmin4) [![](https://img.shields.io/docker/pulls/chorss/docker-pgadmin4.svg)](https://microbadger.com/images/chorss/docker-pgadmin4) [![](https://images.microbadger.com/badges/version/chorss/docker-pgadmin4.svg)](https://microbadger.com/images/chorss/docker-pgadmin4)
@@ -36,10 +36,10 @@ Example commands
  given values and will use this uid/gid to write to the volume-directory.
 
 
-`docker run -d -p 5050:5050 -e UID=2301 -e GID=2301 -v $HOME/mydata:/data chorss/docker-pgadmin4`
+`docker run -d -p 5050:5050 -e UID=2301 -e GID=2301 -v $HOME/mydata:/data avurlerby/docker-pgadmin5`
 
 On most shells, you can run with the UID/GID of the current user like this
 
-    docker run -d -p 5050:5050 -e UID=`id -u` -e GID=`id -g` -v $HOME/mydata:/data avurlerby/docker-pgadmin4
+    docker run -d -p 5050:5050 -e UID=`id -u` -e GID=`id -g` -v $HOME/mydata:/data avurlerby/docker-pgadmin5
 
  **Remember to create `$HOME/mydata` before running the command above.**
